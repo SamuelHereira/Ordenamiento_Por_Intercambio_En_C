@@ -11,20 +11,47 @@ int pedirEntero();
 
 int main()
 {
+    int opc = 0;
 
     printf("Longitud del arreglo: ");
     int tam = pedirEntero();
     int arreglo[tam];
 
-    pedirArreglo(arreglo, tam);
-    imprimirArreglo(arreglo, tam);
-    ordIntercambio(arreglo, tam);
-    imprimirArreglo(arreglo, tam);
 
-    printf("\n");
-    system("pause");
 
+    do {
+
+        system("cls");
+
+        menu();
+
+        scanf("%d", &opc);
+
+        system("cls");
+
+        switch(opc) {
+            case 1: pedirArreglo(arreglo, tam);
+                break;
+            case 2: ordIntercambio(arreglo, tam);
+                printf("Arreglo ordenado!");
+                break;
+            case 3: imprimirArreglo(arreglo, tam);
+                break;
+            case 4: printf("Gracias por utilizar\n\n");
+                break;
+            default: printf("Ingrese un numero entre 1 y 5");
+        }
+        printf("\n\n");
+        system("pause");
+    } while(opc != 4);
     return 0;
+}
+
+void menu() {
+    printf("\n1. Ingresar Vector");
+    printf("\n2. Ordenamiento por intercambio");
+    printf("\n3. Visualizar Vector");
+    printf("\n4. Salir\n\n");
 }
 
 void pedirArreglo(int vector[], int tam)
