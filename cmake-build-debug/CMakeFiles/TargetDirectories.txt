@@ -1,0 +1,3 @@
+C:/Users/Edward/CLionProjects/ordenamiento_por_intercambio/cmake-build-debug/CMakeFiles/ordenamiento_por_intercambio.dir
+C:/Users/Edward/CLionProjects/ordenamiento_por_intercambio/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Edward/CLionProjects/ordenamiento_por_intercambio/cmake-build-debug/CMakeFiles/rebuild_cache.dir
